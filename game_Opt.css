@@ -1,0 +1,129 @@
+﻿body {
+    display: flex;
+    flex-direction: row;
+    background-color: #7b91db;
+}
+
+.side-column {
+    flex: 0 0 16%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    justify-content: center;
+}
+
+.field-column {
+    flex: 0 0 63%;
+    padding: 20px 0 0 0;
+}
+
+#gameField {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    border: solid 5px #3c5a99;
+    background-image: url("background.png");
+    background-size: 100% 800px;
+    background-color: white;
+    width: 1200px;
+    min-width: 1200px !important;
+    height: 800px;
+}
+
+.button-container {
+    margin-bottom: 40px;
+    text-align: center;
+    width: 80%;
+}
+
+#fbLogo {
+    position: absolute;
+    width: 176px;
+    height: 34px;
+    bottom: 10px;
+    display: none;
+}
+
+.user-credentials {
+    display: flex;
+    justify-content: center;
+}
+
+.buttons {
+    width: 150px;
+    margin-top: 20px;
+    height: 50px;
+    background-color: #3c5a99;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+    .buttons:hover {
+        cursor: pointer;
+        background-color: #adabf5;
+    }
+
+
+.text-style {
+    font-size: 18px;
+    font-family: sans-serif;
+    color: white;
+    text-align: center;
+}
+
+.text-style-blue {
+    font-size: 5em;
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: #3c5a99;
+    margin-top: 300px;
+    display: none;
+}
+
+#table_legend {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.legend {
+    margin-left: 35px;
+    margin-right: 35px;
+    width: 50px;
+    height: 50px;
+}
+
+#player_name {
+    display: none;
+    height: 48px;
+    width: 200px;
+    background-color: #7b91db;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+
+#submit_btt {
+    display: none;
+    width: 150px;
+    background-color: #3c5a99;
+    font-family: sans-serif;
+    font-size: 1.2em;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 0;
+}
+
+    #submit_btt:hover {
+        cursor: pointer;
+        background-color: #adabf5;
+    }

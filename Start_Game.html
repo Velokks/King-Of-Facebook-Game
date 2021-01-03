@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>KING OF FACEBOOK</title>
+    <link rel="stylesheet" type="text/css" href="game_Opt.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+            integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+            crossorigin="anonymous"></script>
+    <script type="text/javascript" src="game_Opt.js" defer></script>
+</head>
+<body>
+    <div class="side-column">
+        <div class="button-container">
+            <input id="start_btt" class="buttons" type="button" value="Start" />
+            <input id="pause_btt" class="buttons" type="button" value="Pause" />
+            <input id="stop_btt" class="buttons" type="button" value="Stop" />
+        </div>
+        <p class="text-style">
+            Beat the high score and become <br /> <strong>THE KING OF FACEBOOK!</strong> <br /><br />
+            <strong>BUT BE WARE!</strong> <br /><br />If you catch the <strong>CRY</strong> emoji or <br /> your score becomes less than <strong>ZERO</strong>,
+            <br />it's <strong>GAME OVER</strong> for you, buddy... <br />Oh, also every missed emoji
+            <br />takes <strong>5 Pts.</strong> out from your score, <br /> once you reach <strong>100 Pts</strong>.
+        </p>
+    </div>
+    <div class="field-column">
+        <div id="gameField">
+            <img id="fbLogo" src="facebookLogo.png" />
+            <div id="dropZone"></div>
+            <p id="game_over" class="text-style-blue">GAME OVER :(</p>
+            <p id="paused" class="text-style-blue">PAUSED :)</p>
+            <p id="new_high_score" class="text-style-blue">NEW BEST SCORE! :o</p>
+            <div class="user-credentials">
+                <input id="player_name" pattern="[A-Za-z]{3}" type="text" placeholder="Enter Three Initials" required />
+                <input id="submit_btt" type="button" value="Submit" />
+            </div>
+        </div>
+        <table id="table_legend">
+            <tr>
+                <td><img src="thumbsUp.png" alt="Like emoji" class="legend" /></td>
+                <td><img src="laugh.png" alt="Laugh emoji" class="legend" /></td>
+                <td><img src="heart.png" alt="Heart emoji" class="legend" /></td>
+                <td><img src="sad.png" alt="Sad emoji" class="legend" /></td>
+                <td><img src="cry.png" alt="Cry emoji" class="legend" /></td>
+            </tr>
+            <tr class="text-style">
+                <td>10 Pts.</td>
+                <td>15 Pts.</td>
+                <td>25 Pts.</td>
+                <td>-50 Pts.</td>
+                <td>GAME OVER</td>
+            </tr>
+        </table>
+    </div>
+    <div class="side-column">
+        <p id="score" class="text-style"><strong>YOUR SCORE:</strong></p>
+        <p id="high_score" class="text-style">Best Score:</p>
+        <p id="best_score" class="text-style"></p>
+    </div>
+</body>
+</html>
